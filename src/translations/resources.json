@@ -1,0 +1,28 @@
+{
+  "pl": {
+    "translation": {
+      "menu": {
+        "home": "Strona Główna",
+        "news": "Aktualności",
+        "contact": "Kontakt"
+      },
+      "routes": {
+        "news": "aktualnosci",
+        "contact": "kontakt"
+      }
+    }
+  },
+  "en": {
+    "translation": {
+      "menu": {
+        "home": "Home",
+        "news": "News",
+        "contact": "Contact"
+      },
+      "routes": {
+        "news": "news",
+        "contact": "contact"
+      }
+    }
+  }
+}

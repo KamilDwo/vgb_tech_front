@@ -1,0 +1,65 @@
+.menu {
+  position: fixed;
+  right: 64px;
+  top: 64px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  user-select: none;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 18px;
+  font-family: "OpenSansBold", sans-serif;
+
+  @media only screen and (max-width: 600px) {
+    right: 20px;
+    top: 10px;
+  }
+
+  li {
+    margin-right: 25px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+
+      &:hover {
+        color: #0089ff;
+      }
+    }
+  }
+}
+
+.hamburger {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  border-radius: 46px;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  appearance: none;
+  background: #fff;
+}
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background: #fff;
+  transition: transform .6s;
+  transform: translate(-250px, 0);
+
+
+  &--visible {
+    transform: translate(0, 0);
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'OpenSansBold';
+  src: local('OpenSansBold'), url("./fonts/OpenSans-Bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansExtraBold';
+  src: local('OpenSansExtraBold'), url("./fonts/OpenSans-ExtraBold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: local('OpenSansRegular'), url("./fonts/OpenSans-ExtraBold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.app {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white;
+  font-family: "OpenSansRegular", sans-serif;
+}
+
+.app-content {
+  transition: transform .6s;
+
+  &--moved {
+    transform: translate(100px, 100px);
+  }
+}
